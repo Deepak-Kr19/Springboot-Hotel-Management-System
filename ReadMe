@@ -1,0 +1,28 @@
+Test APIs (Postman)
+
+Add Room
+POST /rooms
+
+{
+  "roomId":1,
+  "roomNumber":"101",
+  "roomType":"Deluxe",
+  "price":3000,
+  "status":"Available"
+}
+
+-------------------------------------------------------------------
+Create Booking
+POST /bookings
+
+
+{
+  "bookingId":1,
+  "customerName":"Rahul",
+  "customerPhone":"9876543210",
+  "checkInDate":"2026-03-07",
+  "checkOutDate":"2026-03-10",
+  "room":{
+     "roomId":1
+  }
+}
